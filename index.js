@@ -1,6 +1,10 @@
 //check to see if the input from the user is a valid hex color
 const hexInput = document.getElementById('hexInput');
 const inputColor = document.getElementById('inputColor');
+const sliderText = document.getElementById('sliderText');
+const slider = document.getElementById('slider');
+
+
 
 hexInput.addEventListener('keyup', () => {
     const hex = hexInput.value;
@@ -44,4 +48,6 @@ const isValidHex = (hex) => {
         return hex;
       }
 
-      console.log(convertRGBToHex(0, 255, 255));
+      slider.addEventListener('input', () => {
+        sliderText.textContent = `${slider.value}%` ;
+      })
