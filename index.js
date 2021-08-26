@@ -59,6 +59,8 @@ const isValidHex = (hex) => {
        return convertRGBToHex(newR, newG, newB)
       }
 
+      alterColor('000', 10)
+
       slider.addEventListener('input', () => {
         sliderText.textContent = `${slider.value}%` ;
       })
