@@ -53,20 +53,22 @@ const isValidHex = (hex) => {
 
        const amount = Math.floor((percentage/100) * 255);
 
-       const newR = r + amount;
-       const newG = g + amount;
-       const newB = b + amount;
+       const newR = increaseWithinRange(r, amount);
+       const newG = increaseWithinRange(g, amount);
+       const newB = increaseWithinRange(b, amount);
+       console.log({newR, newG, newB})
        return convertRGBToHex(newR, newG, newB)
       }
 
       const increaseWithinRange = (hex, amount) => {
-        const newHex = hex + amount;
-        if(newHex > 255) return 255;
-        if (newHex < 0) return 0;
-        return newHex;
+        // const newHex = hex + amount;
+        // if(newHex > 255) return 255;
+        // if (newHex < 0) return 0;
+        // return newHex;
+        return Math.min(255, Math.max(0, hex + amount));
       }
 
-      alterColor('000', 10)
+      alterColor('fff', 10)
 
       slider.addEventListener('input', () => {
         sliderText.textContent = `${slider.value}%` ;
