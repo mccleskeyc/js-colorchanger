@@ -59,6 +59,13 @@ const isValidHex = (hex) => {
        return convertRGBToHex(newR, newG, newB)
       }
 
+      const increaseWithinRange = (hex, amount) => {
+        const newHex = hex + amount;
+        if(newHex > 255) return 255;
+        if (newHex < 0) return 0;
+        return newHex;
+      }
+
       alterColor('000', 10)
 
       slider.addEventListener('input', () => {
