@@ -55,8 +55,8 @@ input[type="text"]{
 
 .toggle-btn {
 
-        height: 30px;
-        width: 60px;
+        height: 20px;
+        width: 40px;
         background-color: gray;
         border-radius: 30px;
         padding: 5px;
@@ -65,8 +65,8 @@ input[type="text"]{
 }
 
 .inner-circle {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: white;
     transition: all 250ms;
