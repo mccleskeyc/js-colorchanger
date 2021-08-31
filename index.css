@@ -42,3 +42,24 @@ input[type="text"]{
     margin-bottom: 25px;
 
 }
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toggle-text {
+    font-size: 18px;
+}
+
+.toggle-btn {
+
+        height: 30px;
+        width: 60px;
+        background-color: gray;
+        border-radius: 30px;
+        padding: 5px;
+        margin: 0 10px;
+
+}
