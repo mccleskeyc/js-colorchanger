@@ -3,11 +3,21 @@ const hexInput = document.getElementById('hexInput');
 const inputColor = document.getElementById('inputColor');
 const sliderText = document.getElementById('sliderText');
 const slider = document.getElementById('slider');
-
 const alteredColor = document.getElementById('alteredColor');
 const alteredColorText = document.getElementById('alteredColorText');
+const lightenText = document.getElementById('lightenText');
 
-
+toggleBtn.addEventListener('click', () => {
+  if(toggleBtn.classList.contains('toggled')){
+    toggleBtn.classList.remove('toggled');
+    lightenText.classList.remove('unselected');
+    darkenText.classList.add('unselected');
+  } else {
+    toggleBtn.classList.add('toggled');
+    lightenText.classList.add('unselected');
+    darkenText.classList.remove('unselected');
+  } 
+})
 
 hexInput.addEventListener('keyup', () => {
     const hex = hexInput.value;
