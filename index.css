@@ -57,7 +57,7 @@ input[type="text"]{
 
         height: 20px;
         width: 40px;
-        background-color: #d6d5ac;
+        background-color: rgb(116, 116, 116);
         border-radius: 30px;
         padding: 5px;
         margin: 0 10px;
@@ -68,7 +68,7 @@ input[type="text"]{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #03043a;
+    background-color: #ffffff;
     border: 1px solid #3e4560;
     transition: all 250ms;
 }
