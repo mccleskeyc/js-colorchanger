@@ -72,3 +72,12 @@ input[type="text"]{
     border: 1px solid #3e4560;
     transition: all 250ms;
 }
+
+.toggle-btn.toggled > .inner-circle {
+    transform: translateX(20px);
+    background-color: #333;
+}
+
+.unselected {
+    opacity: 0.25;
+}
