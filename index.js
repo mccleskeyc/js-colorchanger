@@ -87,7 +87,11 @@ const isValidHex = (hex) => {
 
         sliderText.textContent = `${slider.value}%` ;
 
-        const alteredHex = alterColor(hexInput.value, slider.value);
+        const valueAddition  = 
+        toggleBtn.classList.contains('toggled') ? 
+        -slider.value : slider.value;
+
+        const alteredHex = alterColor(hexInput.value, valueAddition);
         alteredColor.style.backgroundColor = alteredHex;
         alteredColorText.innerText = `Altered Color ${alteredHex}`; 
       })
