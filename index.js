@@ -26,6 +26,7 @@ hexInput.addEventListener('keyup', () => {
     
     const strippedHex = hex.replace('#', '');
     inputColor.style.backgroundColor = "#" + strippedHex;
+    reset();
 })
 
 const isValidHex = (hex) => {
